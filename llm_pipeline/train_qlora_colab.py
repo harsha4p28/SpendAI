@@ -29,7 +29,7 @@ from trl import SFTTrainer
 
 MODEL_ID = "microsoft/Phi-3-mini-4k-instruct"  # or "meta-llama/Meta-Llama-3-8B-Instruct"
 
-DATASET_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "unspsc_fine_tuning_dataset.json")
+DATASET_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "unspsc_train.json")
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "spendai-qlora-adapter")
 FINAL_ADAPTER_DIR = os.path.join(os.path.dirname(__file__), "spendai-qlora-final-adapter")
 

@@ -33,3 +33,6 @@ data_test/
 .DS_Store
 .vscode/
 .idea/
+
+
+llm_pipeline/spendai-qlora-final-adapter/

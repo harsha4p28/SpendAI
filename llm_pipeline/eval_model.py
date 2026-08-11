@@ -139,5 +139,76 @@ def run_evaluation_benchmark():
     print(f"Results saved to     : {EVAL_RESULTS_PATH}")
     return results
 
+def run_real_evaluation_benchmark(adapter_path: str):
+    """
+    Real (non-simulated) evaluation: loads the fine-tuned adapter trained by
+    train_qlora_colab.py and runs it against the held-out eval split
+    (data/unspsc_eval_holdout.json, produced by data_engine/generate_data.py),
+    which the adapter never saw during training. The zero-shot side still uses
+    mock_zero_shot_inference — swap that too if you have a way to call a real
+    un-fine-tuned base model for comparison (e.g. via Groq/OpenAI/local weights).
+    """
+    from llm_pipeline.real_inference import RealQLoRAInference
+
+    holdout_path = os.path.join(DATA_DIR, "unspsc_eval_holdout.json")
+    if not os.path.exists(holdout_path):
+        raise FileNotFoundError(
+            f"Held-out eval set not found at {holdout_path}. Run "
+            f"data_engine/generate_data.py (this now writes unspsc_train.json and "
+            f"unspsc_eval_holdout.json in addition to the combined dataset)."
+        )
+
+    with open(holdout_path, "r") as f:
+        samples = json.load(f)
+
+    print(f"Loaded {len(samples)} HELD-OUT evaluation samples (never seen during training)...")
+    engine = RealQLoRAInference(adapter_path=adapter_path)
+
+    qlora_correct = 0
+    qlora_times = []
+    total = len(samples)
+
+    for sample in samples:
+        target = json.loads(sample["output"])
+        t0 = time.time()
+        pred = engine.predict(sample["input"])
+        qlora_times.append((time.time() - t0) * 1000)
+        if pred.get("category") == target["category"] and pred.get("unspsc_code") == target["unspsc_code"]:
+            qlora_correct += 1
+
+    qlora_acc = round((qlora_correct / total) * 100, 2)
+    results = {
+        "disclaimer": "REAL evaluation against a fine-tuned adapter checkpoint on a held-out split "
+                       "(unspsc_eval_holdout.json), not the simulated mock benchmark.",
+        "evaluation_dataset_size": total,
+        "qlora_finetuned_model": {
+            "model_name": "SpendAI-Phi3-QLoRA-UNSPSC (real checkpoint)",
+            "adapter_path": adapter_path,
+            "unspsc_exact_match_accuracy": qlora_acc,
+            "avg_latency_ms": round(sum(qlora_times) / total, 2),
+        },
+    }
+
+    real_results_path = os.path.join(DATA_DIR, "eval_benchmark_results_real.json")
+    with open(real_results_path, "w") as f:
+        json.dump(results, f, indent=2)
+
+    print(f"\nReal evaluation complete! Accuracy on held-out set: {qlora_acc}%")
+    print(f"Results saved to: {real_results_path}")
+    return results
+
+
 if __name__ == "__main__":
-    run_evaluation_benchmark()
+    import argparse
+    parser = argparse.ArgumentParser(description="Run the SpendAI LLM evaluation benchmark.")
+    parser.add_argument(
+        "--real", metavar="ADAPTER_PATH", default=None,
+        help="Run REAL evaluation against a trained adapter at this path (e.g. "
+             "llm_pipeline/spendai-qlora-final-adapter) instead of the default simulated mock benchmark."
+    )
+    args = parser.parse_args()
+
+    if args.real:
+        run_real_evaluation_benchmark(args.real)
+    else:
+        run_evaluation_benchmark()

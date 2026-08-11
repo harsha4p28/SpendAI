@@ -1,6 +1,6 @@
 {
+  "disclaimer": "SIMULATED benchmark using deterministic keyword-matching mock inference functions, not a real trained model checkpoint. See llm_pipeline/eval_model.py module docstring for what would be required to produce real numbers.",
   "evaluation_dataset_size": 500,
-  "is_simulated_benchmark": true,
   "base_model": {
     "model_name": "Llama-3-8B-Instruct (Zero-Shot)",
     "unspsc_exact_match_accuracy": 20.0,
@@ -8,7 +8,7 @@
     "avg_latency_ms": 0.0
   },
   "qlora_finetuned_model": {
-    "model_name": "SpendAI-Llama3-8B-QLoRA-UNSPSC (Simulated)",
+    "model_name": "SpendAI-Llama3-8B-QLoRA-UNSPSC",
     "peft_method": "QLoRA (4-bit NormalFloat quantization, r=16, alpha=32)",
     "unspsc_exact_match_accuracy": 71.4,
     "category_f1_score": 0.707,
