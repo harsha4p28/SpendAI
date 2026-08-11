@@ -4,15 +4,12 @@ SpendAI - Shared Policy Evaluation Engine
 Single source of truth for spend-policy rule checks, used by BOTH:
   - agent_engine/audit_agents.py   (live, per-invoice audit via SpendAIModelEngine)
   - spark_engine/anomaly_detector.py (batch, distributed anomaly detection)
-
-Previously these two engines each hardcoded their own subset of thresholds from
-policy_rules.json, so a change to the policy file wouldn't be applied uniformly.
-All rule logic and thresholds should live here.
 """
 
 import os
 import json
-from typing import Any, Dict, Tuple, Optional
+from typing import Any, Dict, List, Tuple, Optional
+from datetime import datetime
 
 POLICY_PATH = os.path.join(os.path.dirname(__file__), "policy_rules.json")
 
@@ -38,14 +35,15 @@ def load_policy(policy_path: str = POLICY_PATH) -> Dict[str, Any]:
 
 def check_missing_po(amount: float, po_number: Optional[str], policy: Dict[str, Any]) -> Tuple[bool, str, int]:
     threshold = policy.get("mandatory_po_threshold", 5000.0)
-    if amount > threshold and not po_number:
+    has_po = po_number is not None and str(po_number).strip() != "" and str(po_number).lower() != "none"
+    if amount > threshold and not has_po:
         return True, f"Purchase Order (PO) missing for spend exceeding ${threshold:,.2f}", 35
     return False, "", 0
 
 
 def check_restricted_vendor(vendor: str, policy: Dict[str, Any]) -> Tuple[bool, str, int]:
     restricted_vendors = policy.get("restricted_vendors", [])
-    if any(rv.lower() in vendor.lower() for rv in restricted_vendors):
+    if any(rv.lower() in str(vendor or "").lower() for rv in restricted_vendors):
         return True, f"Vendor '{vendor}' is on company restricted vendor list", 50
     return False, "", 0
 
@@ -59,7 +57,7 @@ def check_missing_receipt(amount: float, receipt_attached: bool, policy: Dict[st
 
 def check_high_value_uncategorized(amount: float, category: str, policy: Dict[str, Any]) -> Tuple[bool, str, int]:
     threshold = policy.get("high_risk_uncategorized_threshold", 10000.0)
-    if amount > threshold and category == "Uncategorized":
+    if amount > threshold and str(category or "").lower() == "uncategorized":
         return True, f"High value transaction (${threshold:,.0f}+) tagged as Uncategorized", 25
     return False, "", 0
 
@@ -95,3 +93,40 @@ def evaluate_department_budget(
             f"exceeds monthly budget limit ${limit:,.2f}"
         ), 20
     return False, "", 0
+
+
+def evaluate_invoice_policy(invoice: Dict[str, Any], policy: Optional[Dict[str, Any]] = None) -> Tuple[List[str], int]:
+    """Evaluates an invoice dict against all active policy rules."""
+    pol = policy or load_policy()
+    amount = float(invoice.get("amount", 0.0))
+    vendor = invoice.get("vendor_name", "")
+    po_number = invoice.get("po_number")
+    receipt_attached = bool(invoice.get("receipt_attached", True))
+    category = invoice.get("category", "Uncategorized")
+    payment_method = invoice.get("payment_method", "Direct Invoice")
+    timestamp_str = invoice.get("timestamp")
+
+    hour = -1
+    if timestamp_str:
+        try:
+            dt = datetime.strptime(str(timestamp_str), "%Y-%m-%d %H:%M:%S")
+            hour = dt.hour
+        except Exception:
+            pass
+
+    rules = [
+        check_missing_po(amount, po_number, pol),
+        check_restricted_vendor(vendor, pol),
+        check_missing_receipt(amount, receipt_attached, pol),
+        check_high_value_uncategorized(amount, category, pol),
+        check_off_hours_high_spend(hour, payment_method, amount, pol),
+    ]
+
+    violations = []
+    total_risk_points = 0
+    for triggered, msg, points in rules:
+        if triggered:
+            violations.append(msg)
+            total_risk_points += points
+
+    return violations, total_risk_points
