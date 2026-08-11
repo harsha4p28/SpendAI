@@ -1,0 +1,97 @@
+"""
+SpendAI - QLoRA Fine-Tuning Script for Google Colab / Local GPU
+Fine-tunes Phi-3-mini / Llama-3-8B on UNSPSC Spend Classification dataset.
+"""
+
+import os
+import json
+import torch
+
+def setup_qlora_finetuning():
+    script_content = """# SpendAI - QLoRA Fine-Tuning Pipeline (Run on Google Colab T4 GPU)
+# ----------------------------------------------------------------------
+# Step 1: Install Dependencies
+# !pip install -q -U torch transformers peft bitsandbytes datasets trl unsloth
+
+import torch
+from datasets import load_dataset
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, TrainingArguments
+from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
+from trl import SFTTrainer
+
+# Step 2: Load Model & 4-Bit Quantization Config
+MODEL_ID = "microsoft/Phi-3-mini-4k-instruct" # or "meta-llama/Meta-Llama-3-8B-Instruct"
+
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.float16,
+    bnb_4bit_use_double_quant=True
+)
+
+tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, trust_remote_code=True)
+tokenizer.pad_token = tokenizer.eos_token
+
+model = AutoModelForCausalLM.from_pretrained(
+    MODEL_ID,
+    quantization_config=bnb_config,
+    device_map="auto",
+    trust_remote_code=True
+)
+
+model = prepare_model_for_kbit_training(model)
+
+# Step 3: Define QLoRA LoRAConfig
+peft_config = LoraConfig(
+    r=16,
+    lora_alpha=32,
+    target_modules=["q_proj", "k_proj", "v_proj", "o_proj"],
+    lora_dropout=0.05,
+    bias="none",
+    task_type="CAUSAL_LM"
+)
+
+# Step 4: Load SpendAI UNSPSC Dataset
+dataset = load_dataset("json", data_files="data/unspsc_fine_tuning_dataset.json")
+
+def format_prompt(example):
+    return f"<|user|>\\n{example['instruction']}\\nContext: {example['input']}<|end|>\\n<|assistant|>\\n{example['output']}<|end|>"
+
+# Step 5: SFTTrainer Configuration
+training_args = TrainingArguments(
+    output_dir="./spendai-qlora-adapter",
+    per_device_train_batch_size=4,
+    gradient_accumulation_steps=4,
+    learning_rate=2e-4,
+    logging_steps=10,
+    max_steps=100,
+    fp16=True,
+    optim="paged_adamw_8bit",
+    report_to="none"
+)
+
+trainer = SFTTrainer(
+    model=model,
+    train_dataset=dataset["train"],
+    peft_config=peft_config,
+    formatting_func=format_prompt,
+    max_seq_length=512,
+    tokenizer=tokenizer,
+    args=training_args
+)
+
+print("Starting QLoRA Fine-Tuning on BSM Spend Dataset...")
+trainer.train()
+
+# Step 6: Save Fine-Tuned Adapter Weights
+trainer.model.save_pretrained("./spendai-qlora-final-adapter")
+tokenizer.save_pretrained("./spendai-qlora-final-adapter")
+print("Saved SpendAI QLoRA adapter weights to ./spendai-qlora-final-adapter")
+"""
+    file_path = os.path.join(os.path.dirname(__file__), "train_qlora_colab.py")
+    with open(file_path, "w") as f:
+        f.write(script_content)
+    print(f"Saved QLoRA Colab training script to {file_path}")
+
+if __name__ == "__main__":
+    setup_qlora_finetuning()
