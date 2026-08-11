@@ -1,0 +1,4 @@
+-r requirements.txt
+
+# Testing & Quality
+pytest>=7.4.0

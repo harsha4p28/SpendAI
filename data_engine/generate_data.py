@@ -1,6 +1,7 @@
 import os
 import json
 import random
+import argparse
 from datetime import datetime, timedelta
 import pandas as pd
 from faker import Faker
@@ -105,11 +106,10 @@ def generate_spend_data(num_records=50000):
         anomaly_type = random.choice(["DUPLICATE_INVOICE", "POLICY_LIMIT_NO_PO", "UNCATEGORIZED_HIGH_VALUE", "OFF_HOURS_HIGH_SPEND"])
         
         if anomaly_type == "DUPLICATE_INVOICE" and target_idx + 1 < num_records:
-            # Create exact duplicate transaction within 2 hours
             original = records[target_idx]
             dup = original.copy()
             dup["transaction_id"] = f"TXN-{200000 + k}"
-            dup["invoice_number"] = original["invoice_number"]  # Same invoice number!
+            dup["invoice_number"] = original["invoice_number"]
             t_orig = datetime.strptime(original["timestamp"], "%Y-%m-%d %H:%M:%S")
             dup["timestamp"] = (t_orig + timedelta(minutes=45)).strftime("%Y-%m-%d %H:%M:%S")
             dup["anomaly_flag"] = "DUPLICATE_INVOICE"
@@ -118,7 +118,7 @@ def generate_spend_data(num_records=50000):
             
         elif anomaly_type == "POLICY_LIMIT_NO_PO":
             records[target_idx]["amount"] = round(random.uniform(15000.0, 60000.0), 2)
-            records[target_idx]["po_number"] = None  # Policy violation: Spend > $5k without PO
+            records[target_idx]["po_number"] = None
             records[target_idx]["anomaly_flag"] = "POLICY_LIMIT_NO_PO"
             
         elif anomaly_type == "UNCATEGORIZED_HIGH_VALUE":
@@ -183,5 +183,10 @@ def generate_llm_fine_tuning_dataset(num_samples=500):
     print(f"Saved fine-tuning dataset to {ft_path}")
 
 if __name__ == "__main__":
-    generate_spend_data(50000)
-    generate_llm_fine_tuning_dataset(500)
+    parser = argparse.ArgumentParser(description="Generate SpendAI synthetic data")
+    parser.add_argument("--num-records", type=int, default=50000, help="Number of spend transactions to generate (default: 50000)")
+    parser.add_argument("--num-ft-samples", type=int, default=500, help="Number of fine-tuning samples to generate (default: 500)")
+    args = parser.parse_args()
+
+    generate_spend_data(args.num_records)
+    generate_llm_fine_tuning_dataset(args.num_ft_samples)

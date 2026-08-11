@@ -73,30 +73,41 @@ flowchart TD
 
 ### Setup & Execution
 
-```powershell
+```bash
 # 1. Activate Virtual Environment
+# Windows PowerShell:
 .\venv\Scripts\Activate.ps1
+# macOS / Linux:
+source venv/bin/activate
 
-# 2. Install Dependencies
+# 2. Install Dependencies (Use requirements-dev.txt for testing)
 pip install -r requirements.txt
+pip install -r requirements-dev.txt
 
 # 3. Configure API Credentials (Optional for LLM features)
 cp .env.example .env
 
-# 4. Generate Synthetic Spend Dataset
+# 4. Run End-to-End Orchestration Pipeline
+python run_pipeline.py
+
+# 5. Launch Streamlit Web Application
+streamlit run app.py
+```
+
+### Advanced: Run Stages Individually
+
+```bash
+# Generate synthetic dataset (--num-records 50000 --num-ft-samples 500)
 python data_engine/generate_data.py
 
-# 5. Run PySpark Big Data Engine
+# Run PySpark anomaly & duplicate detection engine
 python spark_engine/anomaly_detector.py
 
-# 6. Run LLM Benchmark Evaluator
+# Run LLM benchmark evaluation suite
 python llm_pipeline/eval_model.py
 
-# 7. Run Unit Test Suite
+# Run pytest unit test suite
 python -m pytest tests/
-
-# 8. Launch Streamlit Web Application
-streamlit run app.py
 ```
 
 ---
