@@ -1,13 +1,13 @@
 {
   "total_transactions": 50368,
   "anomalies": {
-    "NORMAL": 38510,
+    "NORMAL": 37621,
     "UNCATEGORIZED_HIGH_VALUE": 621,
+    "OFF_HOURS_HIGH_SPEND": 2194,
     "DUPLICATE_INVOICE": 366,
-    "POLICY_LIMIT_NO_PO": 9566,
-    "OFF_HOURS_HIGH_SPEND": 1305
+    "POLICY_LIMIT_NO_PO": 9566
   },
-  "flagged_total_count": 11858,
+  "flagged_total_count": 12747,
   "department_spend": [
     {
       "department": "Legal",
