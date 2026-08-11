@@ -1,0 +1,19 @@
+# Big Data Engine
+pyspark>=3.5.0
+pandas>=2.0.0
+faker>=24.0.0
+
+# AI Agents & LLMs
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-groq>=0.0.1
+langchain-openai>=0.0.5
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+
+# Web Dashboard & Visualization
+streamlit>=1.30.0
+plotly>=5.18.0
+
+# Testing & Quality
+pytest>=7.4.0

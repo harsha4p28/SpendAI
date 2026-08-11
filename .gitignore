@@ -1,0 +1,35 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment Variables
+.env
+
+# Python Bytecode & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# PySpark & Delta Lake
+spark-warehouse/
+derby.log
+metastore_db/
+
+# MLflow & Models
+mlruns/
+checkpoints/
+adapters/
+
+# Data Files (Local generated datasets)
+data/*.csv
+data/*.parquet
+data_test/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
