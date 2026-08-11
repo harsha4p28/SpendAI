@@ -5,7 +5,8 @@ from agent_engine.audit_agents import SpendAIModelEngine, AuditResult
 
 @pytest.fixture
 def audit_engine():
-    return SpendAIModelEngine()
+    # Instantiate with use_llm=False for deterministic, fast offline testing
+    return SpendAIModelEngine(use_llm=False)
 
 def test_audit_safe_invoice(audit_engine):
     safe_invoice = {
@@ -46,3 +47,15 @@ def test_audit_missing_po_limit(audit_engine):
     result = audit_engine.audit_invoice(large_invoice)
     assert result.risk_score >= 35
     assert any("purchase order" in v.lower() for v in result.violations)
+
+def test_rule_based_explanation_fallback_when_no_llm(audit_engine):
+    invoice = {
+        "invoice_number": "INV-1004",
+        "vendor_name": "Staples",
+        "amount": 6000.0,
+        "po_number": None,
+        "receipt_attached": True,
+        "category": "Office Supplies"
+    }
+    result = audit_engine.audit_invoice(invoice)
+    assert "Rule-based enterprise risk audit applied" in result.explanation
