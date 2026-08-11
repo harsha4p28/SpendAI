@@ -1,0 +1,23 @@
+{
+  "max_receiptless_amount": 50.0,
+  "mandatory_po_threshold": 5000.0,
+  "high_risk_uncategorized_threshold": 10000.0,
+  "restricted_vendors": [
+    "Apex Global Vendor LLC",
+    "Misc Merchant 902",
+    "FastPay Transfer",
+    "Unverified Off-Shore LLC"
+  ],
+  "department_monthly_budget_limits": {
+    "Engineering": 100000.0,
+    "Marketing": 75000.0,
+    "Sales": 50000.0,
+    "HR": 30000.0,
+    "Operations": 40000.0
+  },
+  "off_hours_restriction_window": {
+    "start_hour": 1,
+    "end_hour": 4,
+    "max_expense_amount": 1000.0
+  }
+}
