@@ -1,7 +1,16 @@
+"""
+SpendAI - LLM Model Evaluation Benchmark Suite
+----------------------------------------------
+NOTE: The functions `mock_zero_shot_inference` and `mock_qlora_finetuned_inference`
+in this module are rule-based simulations used to demonstrate the evaluation harness design.
+They stand in for an actual fine-tuned QLoRA adapter checkpoint.
+To train a real QLoRA model and produce actual evaluation metrics, execute
+`llm_pipeline/train_qlora_colab.py` on a GPU-enabled machine (Google Colab T4 or better).
+"""
+
 import os
 import json
 import time
-import pandas as pd
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 DATASET_PATH = os.path.join(DATA_DIR, "unspsc_fine_tuning_dataset.json")
@@ -42,6 +51,7 @@ def mock_qlora_finetuned_inference(description):
 def run_evaluation_benchmark():
     print("=" * 60)
     print("  SpendAI - LLM Model Evaluation (Base Zero-Shot vs QLoRA PEFT)")
+    print("  Note: Running simulated benchmark for evaluation harness demo")
     print("=" * 60)
     
     if not os.path.exists(DATASET_PATH):
@@ -84,6 +94,7 @@ def run_evaluation_benchmark():
     
     results = {
         "evaluation_dataset_size": total,
+        "is_simulated_benchmark": True,
         "base_model": {
             "model_name": "Llama-3-8B-Instruct (Zero-Shot)",
             "unspsc_exact_match_accuracy": base_acc,
@@ -91,7 +102,7 @@ def run_evaluation_benchmark():
             "avg_latency_ms": round(sum(base_times) / total, 2)
         },
         "qlora_finetuned_model": {
-            "model_name": "SpendAI-Llama3-8B-QLoRA-UNSPSC",
+            "model_name": "SpendAI-Llama3-8B-QLoRA-UNSPSC (Simulated)",
             "peft_method": "QLoRA (4-bit NormalFloat quantization, r=16, alpha=32)",
             "unspsc_exact_match_accuracy": qlora_acc,
             "category_f1_score": round(qlora_acc * 0.99 / 100, 3),

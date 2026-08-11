@@ -200,6 +200,7 @@ with tabs[1]:
 with tabs[2]:
     st.subheader("QLoRA Fine-Tuning vs Base LLM Benchmark")
     st.caption("Evaluation results comparing Zero-Shot Llama-3-8B vs. Fine-Tuned SpendAI QLoRA Model on UNSPSC Procurement Taxonomy.")
+    st.info("ℹ️ **Simulation Disclaimer:** The metrics below demonstrate the evaluation harness design using simulated inference (`mock_zero_shot_inference` vs `mock_qlora_finetuned_inference`). To generate metrics from an actual trained model checkpoint, execute `llm_pipeline/train_qlora_colab.py` on a GPU-enabled environment (e.g. Google Colab T4).")
 
     if os.path.exists(BENCHMARK_PATH):
         with open(BENCHMARK_PATH, "r") as f:
