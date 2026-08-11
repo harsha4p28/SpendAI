@@ -1,0 +1,107 @@
+{
+  "total_transactions": 50368,
+  "anomalies": {
+    "NORMAL": 38510,
+    "UNCATEGORIZED_HIGH_VALUE": 621,
+    "DUPLICATE_INVOICE": 366,
+    "POLICY_LIMIT_NO_PO": 9566,
+    "OFF_HOURS_HIGH_SPEND": 1305
+  },
+  "flagged_total_count": 11858,
+  "department_spend": [
+    {
+      "department": "Legal",
+      "total_spend": 113373019.21,
+      "avg_spend": 15641.97,
+      "tx_count": 7248
+    },
+    {
+      "department": "Engineering",
+      "total_spend": 112771318.69,
+      "avg_spend": 15640.96,
+      "tx_count": 7210
+    },
+    {
+      "department": "Marketing",
+      "total_spend": 112536317.54,
+      "avg_spend": 15550.13,
+      "tx_count": 7237
+    },
+    {
+      "department": "HR",
+      "total_spend": 112425214.92,
+      "avg_spend": 15770.12,
+      "tx_count": 7129
+    },
+    {
+      "department": "Operations",
+      "total_spend": 110312547.97,
+      "avg_spend": 15329.7,
+      "tx_count": 7196
+    },
+    {
+      "department": "Finance",
+      "total_spend": 110293383.14,
+      "avg_spend": 15455.91,
+      "tx_count": 7136
+    },
+    {
+      "department": "Sales",
+      "total_spend": 109676575.44,
+      "avg_spend": 15207.51,
+      "tx_count": 7212
+    }
+  ],
+  "top_vendors": [
+    {
+      "vendor": "Snowflake Inc",
+      "total_spend": 58934604.46,
+      "tx_count": 2573
+    },
+    {
+      "vendor": "Atlassian",
+      "total_spend": 58782441.74,
+      "tx_count": 2566
+    },
+    {
+      "vendor": "Amazon Web Services",
+      "total_spend": 58459758.34,
+      "tx_count": 2542
+    },
+    {
+      "vendor": "GitHub Inc",
+      "total_spend": 58280443.23,
+      "tx_count": 2518
+    },
+    {
+      "vendor": "Microsoft Azure",
+      "total_spend": 56895659.44,
+      "tx_count": 2482
+    },
+    {
+      "vendor": "Slack Technologies",
+      "total_spend": 55655466.51,
+      "tx_count": 2525
+    },
+    {
+      "vendor": "McKinsey & Co",
+      "total_spend": 55203230.1,
+      "tx_count": 1258
+    },
+    {
+      "vendor": "LegalShield LLP",
+      "total_spend": 54379293.44,
+      "tx_count": 1274
+    },
+    {
+      "vendor": "PwC Consulting",
+      "total_spend": 53522202.54,
+      "tx_count": 1225
+    },
+    {
+      "vendor": "Deloitte Advisory",
+      "total_spend": 52165445.92,
+      "tx_count": 1244
+    }
+  ]
+}
