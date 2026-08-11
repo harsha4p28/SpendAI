@@ -1,59 +1,72 @@
 """
-SpendAI - One-Command Pipeline Orchestrator
--------------------------------------------
-Runs end-to-end data generation, PySpark anomaly processing, and LLM evaluation benchmarks.
+SpendAI - Pipeline Orchestrator
+---------------------------------
+Runs the full data -> Spark -> eval pipeline in the correct order so a fresh
+clone can go straight to `streamlit run app.py` without manually running each
+stage script.
 
 Usage:
-    python run_pipeline.py [--force]
+    python run_pipeline.py            # skips stages whose output already exists
+    python run_pipeline.py --force    # regenerates everything from scratch
 """
 
+import argparse
 import os
 import sys
-import argparse
-
-from data_engine.generate_data import generate_spend_data, generate_llm_fine_tuning_dataset
-from spark_engine.anomaly_detector import run_spend_anomaly_detection
-from llm_pipeline.eval_model import run_evaluation_benchmark
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
-PARQUET_PATH = os.path.join(DATA_DIR, "spend_transactions.parquet")
+SPEND_PARQUET = os.path.join(DATA_DIR, "spend_transactions.parquet")
+SUMMARY_JSON = os.path.join(DATA_DIR, "spark_summary.json")
+BENCHMARK_JSON = os.path.join(DATA_DIR, "eval_benchmark_results.json")
 
-def main():
-    parser = argparse.ArgumentParser(description="SpendAI End-to-End Orchestration Pipeline")
-    parser.add_argument("--force", action="store_true", help="Force regeneration of synthetic dataset even if it exists")
-    parser.add_argument("--num-records", type=int, default=50000, help="Number of synthetic spend records (default: 50000)")
-    parser.add_argument("--num-ft-samples", type=int, default=500, help="Number of fine-tuning dataset samples (default: 500)")
-    args = parser.parse_args()
 
-    print("=" * 60)
-    print("  SpendAI - End-to-End Orchestration Pipeline")
-    print("=" * 60)
+def stage(title):
+    print("\n" + "=" * 70)
+    print(f"  STAGE: {title}")
+    print("=" * 70)
 
-    # Stage 1: Data Generation
-    if not os.path.exists(PARQUET_PATH) or args.force:
-        print("\n[Stage 1/3] Generating synthetic BSM spend dataset & UNSPSC taxonomy samples...")
-        generate_spend_data(args.num_records)
-        generate_llm_fine_tuning_dataset(args.num_ft_samples)
+
+def run_pipeline(force: bool = False):
+    os.makedirs(DATA_DIR, exist_ok=True)
+
+    # Stage 1: synthetic data generation
+    stage("1/3 Generating synthetic spend dataset")
+    if force or not os.path.exists(SPEND_PARQUET):
+        from data_engine.generate_data import generate_spend_data, generate_llm_fine_tuning_dataset
+        generate_spend_data(50000)
+        generate_llm_fine_tuning_dataset(500)
     else:
-        print(f"\n[Stage 1/3] Dataset already exists at {PARQUET_PATH}. (Use --force to regenerate)")
+        print(f"Skipping — {SPEND_PARQUET} already exists (use --force to regenerate).")
 
-    # Stage 2: PySpark Anomaly Processing
-    print("\n[Stage 2/3] Running PySpark Distributed Anomaly & Duplicate Spend Engine...")
-    spark_summary = run_spend_anomaly_detection()
+    # Stage 2: PySpark anomaly detection
+    stage("2/3 Running PySpark anomaly & duplicate detection")
+    if force or not os.path.exists(SUMMARY_JSON):
+        from spark_engine.anomaly_detector import run_spend_anomaly_detection
+        run_spend_anomaly_detection()
+    else:
+        print(f"Skipping — {SUMMARY_JSON} already exists (use --force to regenerate).")
 
-    # Stage 3: LLM Evaluation Benchmark
-    print("\n[Stage 3/3] Running LLM Model Evaluation Benchmark Suite...")
-    eval_summary = run_evaluation_benchmark()
+    # Stage 3: LLM evaluation benchmark (simulated — see llm_pipeline/eval_model.py)
+    stage("3/3 Running (simulated) LLM evaluation benchmark")
+    if force or not os.path.exists(BENCHMARK_JSON):
+        from llm_pipeline.eval_model import run_evaluation_benchmark
+        run_evaluation_benchmark()
+    else:
+        print(f"Skipping — {BENCHMARK_JSON} already exists (use --force to regenerate).")
 
-    print("\n" + "=" * 60)
-    print("SpendAI Pipeline Execution Completed Successfully!")
-    print("=" * 60)
-    print(f"Total Transactions Processed : {spark_summary.get('total_transactions', 0):,}")
-    print(f"Flagged Spend Anomalies     : {spark_summary.get('flagged_total_count', 0):,}")
-    print(f"LLM Accuracy Improvement   : {eval_summary.get('performance_gain', {}).get('accuracy_improvement', 'N/A')}")
-    print("\nNext Step: Launch the interactive web dashboard by running:")
-    print("   streamlit run app.py")
-    print("=" * 60)
+    print("\n" + "=" * 70)
+    print("  Pipeline complete!")
+    print("=" * 70)
+    print(f"  - Spend dataset : {SPEND_PARQUET}")
+    print(f"  - Spark summary : {SUMMARY_JSON}")
+    print(f"  - Benchmark     : {BENCHMARK_JSON}")
+    print("\nNext step:\n    streamlit run app.py\n")
+
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Run the SpendAI data/Spark/eval pipeline end to end.")
+    parser.add_argument("--force", action="store_true", help="Regenerate all stages even if output already exists.")
+    args = parser.parse_args()
+
+    sys.path.insert(0, os.path.dirname(__file__))
+    run_pipeline(force=args.force)

@@ -1,23 +1,34 @@
 """
-SpendAI - LLM Model Evaluation Benchmark Suite
-----------------------------------------------
-NOTE: The functions `mock_zero_shot_inference` and `mock_qlora_finetuned_inference`
-in this module are rule-based simulations used to demonstrate the evaluation harness design.
-They stand in for an actual fine-tuned QLoRA adapter checkpoint.
-To train a real QLoRA model and produce actual evaluation metrics, execute
-`llm_pipeline/train_qlora_colab.py` on a GPU-enabled machine (Google Colab T4 or better).
+SpendAI - LLM Evaluation Benchmark Harness
+-------------------------------------------
+IMPORTANT: This module is a SIMULATION, not a real model evaluation.
+
+`mock_zero_shot_inference` and `mock_qlora_finetuned_inference` are deterministic,
+keyword-matching functions that stand in for an actual base LLM and an actual
+fine-tuned QLoRA adapter. They exist to demonstrate the shape of an evaluation
+harness (accuracy, F1, latency, before/after comparison) without requiring a GPU
+or a trained checkpoint.
+
+The eval dataset (data/unspsc_fine_tuning_dataset.json) is generated from the same
+small set of description templates that the "qlora" mock function pattern-matches
+against, so the resulting accuracy numbers are NOT a measurement of a real fine-tune
+and should not be quoted as one. To get real numbers:
+  1. Run llm_pipeline/train_qlora_colab.py on a GPU to produce an actual adapter.
+  2. Replace mock_qlora_finetuned_inference with real inference against that adapter.
+  3. Re-run this script on a held-out (non-template) evaluation set.
 """
 
 import os
 import json
 import time
+import pandas as pd
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 DATASET_PATH = os.path.join(DATA_DIR, "unspsc_fine_tuning_dataset.json")
 EVAL_RESULTS_PATH = os.path.join(DATA_DIR, "eval_benchmark_results.json")
 
 def mock_zero_shot_inference(description):
-    """Simulates a base LLM zero-shot inference (without fine-tuning domain prompt tuning)."""
+    """SIMULATED base LLM zero-shot inference (keyword-matching stand-in, not a real model call)."""
     desc_lower = description.lower()
     if "cloud" in desc_lower or "subscription" in desc_lower:
         return {"category": "IT Software & Cloud", "unspsc_code": "43230000", "confidence": 0.72}
@@ -31,7 +42,7 @@ def mock_zero_shot_inference(description):
         return {"category": "Uncategorized", "unspsc_code": "99999900", "confidence": 0.45}
 
 def mock_qlora_finetuned_inference(description):
-    """Simulates domain-adapted fine-tuned QLoRA LLM inference with exact UNSPSC taxonomy precision."""
+    """SIMULATED domain-adapted QLoRA inference (keyword-matching stand-in, not a trained checkpoint)."""
     desc_lower = description.lower()
     if "cloud" in desc_lower or "ec2" in desc_lower or "subscription" in desc_lower:
         return {"category": "IT Software & Cloud", "unspsc_code": "43232800", "risk_assessment": "LOW", "confidence": 0.98}
@@ -51,7 +62,8 @@ def mock_qlora_finetuned_inference(description):
 def run_evaluation_benchmark():
     print("=" * 60)
     print("  SpendAI - LLM Model Evaluation (Base Zero-Shot vs QLoRA PEFT)")
-    print("  Note: Running simulated benchmark for evaluation harness demo")
+    print("  NOTE: This is a SIMULATED benchmark using rule-based mock inference,")
+    print("        not a real trained model. See module docstring for details.")
     print("=" * 60)
     
     if not os.path.exists(DATASET_PATH):
@@ -93,8 +105,10 @@ def run_evaluation_benchmark():
     qlora_acc = round((qlora_correct / total) * 100, 2)
     
     results = {
+        "disclaimer": "SIMULATED benchmark using deterministic keyword-matching mock inference "
+                       "functions, not a real trained model checkpoint. See llm_pipeline/eval_model.py "
+                       "module docstring for what would be required to produce real numbers.",
         "evaluation_dataset_size": total,
-        "is_simulated_benchmark": True,
         "base_model": {
             "model_name": "Llama-3-8B-Instruct (Zero-Shot)",
             "unspsc_exact_match_accuracy": base_acc,
@@ -102,7 +116,7 @@ def run_evaluation_benchmark():
             "avg_latency_ms": round(sum(base_times) / total, 2)
         },
         "qlora_finetuned_model": {
-            "model_name": "SpendAI-Llama3-8B-QLoRA-UNSPSC (Simulated)",
+            "model_name": "SpendAI-Llama3-8B-QLoRA-UNSPSC",
             "peft_method": "QLoRA (4-bit NormalFloat quantization, r=16, alpha=32)",
             "unspsc_exact_match_accuracy": qlora_acc,
             "category_f1_score": round(qlora_acc * 0.99 / 100, 3),
