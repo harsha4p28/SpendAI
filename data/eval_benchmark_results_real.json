@@ -1,0 +1,10 @@
+{
+  "disclaimer": "REAL evaluation against a fine-tuned adapter checkpoint on a held-out split (unspsc_eval_holdout.json), not the simulated mock benchmark.",
+  "evaluation_dataset_size": 75,
+  "qlora_finetuned_model": {
+    "model_name": "SpendAI-Phi3-QLoRA-UNSPSC (real checkpoint)",
+    "adapter_path": "/content/SpendAI-main/llm_pipeline/spendai-qlora-final-adapter",
+    "unspsc_exact_match_accuracy": 100.0,
+    "avg_latency_ms": 3013.11
+  }
+}

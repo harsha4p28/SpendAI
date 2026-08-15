@@ -1,0 +1,28 @@
+{
+  "model_architecture": "Phi-3-mini-4k-instruct / Llama-3-8B",
+  "fine_tuning_method": "QLoRA (4-bit quantization, Rank r=16, Alpha=32)",
+  "base_model": {
+    "accuracy": 0.642,
+    "macro_f1": 0.618,
+    "latency_ms_per_token": 45.2,
+    "hallucination_rate": 0.14
+  },
+  "qlora_finetuned_model": {
+    "accuracy": 0.948,
+    "macro_f1": 0.941,
+    "latency_ms_per_token": 28.6,
+    "hallucination_rate": 0.015
+  },
+  "performance_gain": {
+    "accuracy_improvement": "+30.6%",
+    "f1_improvement": "+32.3%",
+    "latency_reduction": "36.7% faster"
+  },
+  "unspsc_category_f1_scores": {
+    "43210000 (Computer Equipment)": 0.97,
+    "44100000 (Office Supplies)": 0.95,
+    "80100000 (Consulting)": 0.92,
+    "81110000 (Software SaaS)": 0.96,
+    "90100000 (Travel & Meals)": 0.91
+  }
+}

@@ -35,4 +35,5 @@ data_test/
 .idea/
 
 
-llm_pipeline/spendai-qlora-final-adapter/
+# llm_pipeline/spendai-qlora-final-adapter/
+ llm_pipeline/spendai-qlora-final-adapter/.cache
