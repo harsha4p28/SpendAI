@@ -1,377 +1,1502 @@
 [
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Google Ads' (Amount: $44,927.80): 'Targeted digital advertising campaign on Google Search, LinkedIn Ads, and Meta feed'",
-    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82101800\", \"risk_assessment\": \"LOW\"}"
+    "input": "Categorize procurement spend item from Vendor 'HON. HOWARD \"BUCK\" MCKEON' (Amount: $14.99): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Dell Technologies' (Amount: $41,141.99): '15x Apple MacBook Pro M3 laptops and 4K external monitors for software engineering new hires'",
-    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211500\", \"risk_assessment\": \"MEDIUM\"}"
+    "input": "Categorize procurement spend item from Vendor 'DIGITAL COPIER SUPERCENTER' (Amount: $4,900.00): 'OFFICE EQUIP PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'PwC Consulting' (Amount: $7,223.95): 'Urgent consulting fee payment for external PR agency during product launch crisis'",
-    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80141600\", \"risk_assessment\": \"HIGH\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Marriott International' (Amount: $20,286.05): 'Roundtrip business flight tickets and 3-night hotel accommodation for annual sales summit'",
+    "input": "Categorize procurement spend item from Vendor 'WILLIAMS, WILLIAM E' (Amount: $23.83): 'TRAVEL SUBSISTENCE'",
     "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'LegalShield LLP' (Amount: $33,199.51): 'Q3 Tax compliance audit, legal risk advisory, and financial bookkeeping retainer fees'",
-    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"84110000\", \"risk_assessment\": \"MEDIUM\"}"
+    "input": "Categorize procurement spend item from Vendor 'TAYLOR, MICHAEL P' (Amount: $36.78): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Meta Platforms' (Amount: $36,856.22): 'Targeted digital advertising campaign on Google Search, LinkedIn Ads, and Meta feed'",
-    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82101800\", \"risk_assessment\": \"LOW\"}"
+    "input": "Categorize procurement spend item from Vendor 'DMV RENEWAL' (Amount: $380.00): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Snowflake Inc' (Amount: $48,770.14): 'Software license renewal for Enterprise Jira, Confluence, and Slack Pro workspaces'",
-    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Misc Merchant 902' (Amount: $31,320.71): 'Unitemized cash transfer reimbursement to offshore vendor with no itemized receipt attached'",
-    "output": "{\"category\": \"Uncategorized\", \"unspsc_code\": \"99999900\", \"risk_assessment\": \"HIGH\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Snowflake Inc' (Amount: $2,678.00): 'Software license renewal for Enterprise Jira, Confluence, and Slack Pro workspaces'",
-    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Microsoft Azure' (Amount: $43,011.38): 'Software license renewal for Enterprise Jira, Confluence, and Slack Pro workspaces'",
-    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Delta Air Lines' (Amount: $36,783.01): 'Roundtrip business flight tickets and 3-night hotel accommodation for annual sales summit'",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $59.00): 'CAR RENTAL'",
     "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'LegalShield LLP' (Amount: $14,577.21): 'Q3 Tax compliance audit, legal risk advisory, and financial bookkeeping retainer fees'",
-    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"84110000\", \"risk_assessment\": \"MEDIUM\"}"
+    "input": "Categorize procurement spend item from Vendor 'WASHINGTON PROFESSIONAL SYSTEM' (Amount: $180.00): 'OFFICE SUPPLIES (OUTSIDE) QTY - 12'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Amazon Web Services' (Amount: $35,046.93): 'Software license renewal for Enterprise Jira, Confluence, and Slack Pro workspaces'",
+    "input": "Categorize procurement spend item from Vendor 'GOLDROSEN, BRUCE H' (Amount: $200.00): 'TRAINING'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $1,147.98): 'TRAVEL SUBSISTENCE (no vendor on file, no supporting documentation)'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown Vendor' (Amount: $1,097.55): 'DC TELECOM TOLLS (TRANSFER) (duplicate submission \u2014 same invoice already paid this period)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'JED 67 REALTY LLC' (Amount: $1,743.50): 'DISTRICT OFFICE RENT (PRIVATE)'",
     "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Herman Miller Furniture' (Amount: $47,874.68): 'Bulk purchase of ergonomic office chairs, dual-monitor desks, and filing cabinets'",
-    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"56110000\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Apex Global Vendor LLC' (Amount: $34,864.47): 'Unitemized cash transfer reimbursement to offshore vendor with no itemized receipt attached'",
-    "output": "{\"category\": \"Uncategorized\", \"unspsc_code\": \"99999900\", \"risk_assessment\": \"HIGH\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Uber for Business' (Amount: $17,881.39): 'Executive car rental, airport limousine service, and luxury meal expenses'",
-    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"78111800\", \"risk_assessment\": \"MEDIUM\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Airbnb Enterprise' (Amount: $44,901.89): 'Roundtrip business flight tickets and 3-night hotel accommodation for annual sales summit'",
-    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'PaperCorp Solutions' (Amount: $24,715.38): 'Bulk purchase of ergonomic office chairs, dual-monitor desks, and filing cabinets'",
-    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"56110000\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Google Ads' (Amount: $26,482.24): 'Targeted digital advertising campaign on Google Search, LinkedIn Ads, and Meta feed'",
-    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82101800\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Microsoft Azure' (Amount: $46,886.93): 'Software license renewal for Enterprise Jira, Confluence, and Slack Pro workspaces'",
+    "input": "Categorize procurement spend item from Vendor 'AMERICAN SAMOA TELECOMMUNICATIONS' (Amount: $3,500.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
     "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Office Depot' (Amount: $27,783.07): 'Bulk purchase of ergonomic office chairs, dual-monitor desks, and filing cabinets'",
-    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"56110000\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Amazon Web Services' (Amount: $13,443.91): 'Monthly cloud infrastructure subscription for EC2, S3 bucket storage, and RDS database hosting'",
-    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43232800\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Herman Miller Furniture' (Amount: $20,048.24): 'Bulk purchase of ergonomic office chairs, dual-monitor desks, and filing cabinets'",
-    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"56110000\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Slack Technologies' (Amount: $8,941.22): 'Software license renewal for Enterprise Jira, Confluence, and Slack Pro workspaces'",
+    "input": "Categorize procurement spend item from Vendor 'M L STREET PROPERTIES' (Amount: $6,469.30): 'DISTRICT OFFICE RENT (PRIVATE)'",
     "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Meta Platforms' (Amount: $16,430.48): 'Targeted digital advertising campaign on Google Search, LinkedIn Ads, and Meta feed'",
-    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82101800\", \"risk_assessment\": \"LOW\"}"
+    "input": "Categorize procurement spend item from Vendor 'EMERGENCY RESOURCES INTERNATIONAL' (Amount: $698.88): 'PURCHASES FOR RESALE QTY - 896'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'GitHub Inc' (Amount: $10,831.84): 'Software license renewal for Enterprise Jira, Confluence, and Slack Pro workspaces'",
+    "input": "Categorize procurement spend item from Vendor 'BEESLEY, DYLAN A' (Amount: $25.00): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'BLACKWOOD ASSOCIATES INC' (Amount: $170,439.30): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HAP INC' (Amount: $31,065.05): 'DISTRICT OFFICE RENT (PRIVATE) (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'GRAINGER' (Amount: $69.84): 'OFFICE SUPPLIES (OUTSIDE) QTY - 12'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $4,424.76): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $1,615.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'BERMAN DATABASE SYSTEMS' (Amount: $6,300.00): 'COMPUTER SOFTW PURCH LESS THAN $10,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOCHSCHILD, KEENAN N' (Amount: $15.99): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'FCN TECHNOLOGY SOLUTIONS' (Amount: $52.66): 'COMPUTER SOFTW PURCH LESS THAN $10,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $1,885.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITI PCARD-BUREAU OF CENSUS' (Amount: $25.00): 'MISCELLANEOUS PRINTING'",
+    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $1,036.26): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'LESTER, DEAN A' (Amount: $3,623.18): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ATTERBURY, KEZMICHE' (Amount: $101.39): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $244.75): 'DC TELECOM TOLLS (TRANSFER)'",
     "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'LegalShield LLP' (Amount: $29,701.78): 'Urgent consulting fee payment for external PR agency during product launch crisis'",
-    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80141600\", \"risk_assessment\": \"HIGH\"}"
+    "input": "Categorize procurement spend item from Vendor 'COMPUTERWORKS' (Amount: $1,895.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Uber for Business' (Amount: $19,487.00): 'Roundtrip business flight tickets and 3-night hotel accommodation for annual sales summit'",
+    "input": "Categorize procurement spend item from Vendor 'HON. MICHAEL H MICHAUD' (Amount: $28.75): 'TRAVEL SUBSISTENCE'",
     "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Deloitte Advisory' (Amount: $8,446.62): 'Urgent consulting fee payment for external PR agency during product launch crisis'",
-    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80141600\", \"risk_assessment\": \"HIGH\"}"
+    "input": "Categorize procurement spend item from Vendor 'CITI PCARD-CHARLOTTE HALL BP' (Amount: $10.00): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'PaperCorp Solutions' (Amount: $19,543.50): 'Bulk purchase of ergonomic office chairs, dual-monitor desks, and filing cabinets'",
-    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"56110000\", \"risk_assessment\": \"LOW\"}"
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $1,885.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Herman Miller Furniture' (Amount: $43,406.25): 'Bulk purchase of ergonomic office chairs, dual-monitor desks, and filing cabinets'",
-    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"56110000\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Uber for Business' (Amount: $1,594.09): 'Roundtrip business flight tickets and 3-night hotel accommodation for annual sales summit'",
+    "input": "Categorize procurement spend item from Vendor 'LYNCH, MICHAEL R' (Amount: $157.95): 'TRAVEL SUBSISTENCE'",
     "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'CDW Direct' (Amount: $21,857.14): '15x Apple MacBook Pro M3 laptops and 4K external monitors for software engineering new hires'",
-    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211500\", \"risk_assessment\": \"MEDIUM\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Atlassian' (Amount: $2,869.72): 'Software license renewal for Enterprise Jira, Confluence, and Slack Pro workspaces'",
+    "input": "Categorize procurement spend item from Vendor 'DAYTON PARK LLC' (Amount: $900.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
     "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Slack Technologies' (Amount: $14,573.16): 'Monthly cloud infrastructure subscription for EC2, S3 bucket storage, and RDS database hosting'",
-    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43232800\", \"risk_assessment\": \"LOW\"}"
+    "input": "Categorize procurement spend item from Vendor 'LAKE CHAMPLAIN REGIONAL COC' (Amount: $40.00): 'TRAINING'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'LegalShield LLP' (Amount: $43,051.91): 'Urgent consulting fee payment for external PR agency during product launch crisis'",
-    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80141600\", \"risk_assessment\": \"HIGH\"}"
+    "input": "Categorize procurement spend item from Vendor 'VERIZON WIRELESS' (Amount: $513.99): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Office Depot' (Amount: $37,799.16): 'Bulk purchase of ergonomic office chairs, dual-monitor desks, and filing cabinets'",
-    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"56110000\", \"risk_assessment\": \"LOW\"}"
+    "input": "Categorize procurement spend item from Vendor 'ICONSTITUENT LLC' (Amount: $34,009.04): 'TECHNOLOGY SERVICE CONTRACTS (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"HIGH\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Snowflake Inc' (Amount: $40,402.81): 'Monthly cloud infrastructure subscription for EC2, S3 bucket storage, and RDS database hosting'",
-    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43232800\", \"risk_assessment\": \"LOW\"}"
+    "input": "Categorize procurement spend item from Vendor 'Unknown Vendor' (Amount: $983.30): 'DC TELECOM TOLLS (TRANSFER) (duplicate submission \u2014 same invoice already paid this period)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'McKinsey & Co' (Amount: $34,282.95): 'Q3 Tax compliance audit, legal risk advisory, and financial bookkeeping retainer fees'",
-    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"84110000\", \"risk_assessment\": \"MEDIUM\"}"
+    "input": "Categorize procurement spend item from Vendor 'HON. GENE GREEN' (Amount: $50.00): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'FastPay Transfer' (Amount: $15,191.83): 'Unitemized cash transfer reimbursement to offshore vendor with no itemized receipt attached'",
-    "output": "{\"category\": \"Uncategorized\", \"unspsc_code\": \"99999900\", \"risk_assessment\": \"HIGH\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Amazon Web Services' (Amount: $10,309.11): 'Monthly cloud infrastructure subscription for EC2, S3 bucket storage, and RDS database hosting'",
-    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43232800\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Meta Platforms' (Amount: $11,002.88): 'Targeted digital advertising campaign on Google Search, LinkedIn Ads, and Meta feed'",
-    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82101800\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Logitech' (Amount: $18,033.86): '15x Apple MacBook Pro M3 laptops and 4K external monitors for software engineering new hires'",
-    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211500\", \"risk_assessment\": \"MEDIUM\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Airbnb Enterprise' (Amount: $48,650.94): 'Roundtrip business flight tickets and 3-night hotel accommodation for annual sales summit'",
+    "input": "Categorize procurement spend item from Vendor 'HON WILLIAM L OWENS' (Amount: $13.60): 'TRAVEL SUBSISTENCE'",
     "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Logitech' (Amount: $45,206.15): '15x Apple MacBook Pro M3 laptops and 4K external monitors for software engineering new hires'",
-    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211500\", \"risk_assessment\": \"MEDIUM\"}"
+    "input": "Categorize procurement spend item from Vendor 'ICONSTITUENT LLC' (Amount: $3,225.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Meta Platforms' (Amount: $39,896.31): 'Targeted digital advertising campaign on Google Search, LinkedIn Ads, and Meta feed'",
-    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82101800\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'LegalShield LLP' (Amount: $46,339.08): 'Q3 Tax compliance audit, legal risk advisory, and financial bookkeeping retainer fees'",
-    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"84110000\", \"risk_assessment\": \"MEDIUM\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Uber for Business' (Amount: $9,622.62): 'Executive car rental, airport limousine service, and luxury meal expenses'",
-    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"78111800\", \"risk_assessment\": \"MEDIUM\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Atlassian' (Amount: $45,684.43): 'Monthly cloud infrastructure subscription for EC2, S3 bucket storage, and RDS database hosting'",
-    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43232800\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Uber for Business' (Amount: $12,175.85): 'Executive car rental, airport limousine service, and luxury meal expenses'",
-    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"78111800\", \"risk_assessment\": \"MEDIUM\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Deloitte Advisory' (Amount: $19,023.91): 'Urgent consulting fee payment for external PR agency during product launch crisis'",
-    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80141600\", \"risk_assessment\": \"HIGH\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Herman Miller Furniture' (Amount: $37,772.02): 'Bulk purchase of ergonomic office chairs, dual-monitor desks, and filing cabinets'",
-    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"56110000\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'LinkedIn Ads' (Amount: $39,708.86): 'Targeted digital advertising campaign on Google Search, LinkedIn Ads, and Meta feed'",
-    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82101800\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'FastPay Transfer' (Amount: $43,217.98): 'Unitemized cash transfer reimbursement to offshore vendor with no itemized receipt attached'",
-    "output": "{\"category\": \"Uncategorized\", \"unspsc_code\": \"99999900\", \"risk_assessment\": \"HIGH\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Uber for Business' (Amount: $35,841.50): 'Executive car rental, airport limousine service, and luxury meal expenses'",
-    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"78111800\", \"risk_assessment\": \"MEDIUM\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Logitech' (Amount: $32,496.71): '15x Apple MacBook Pro M3 laptops and 4K external monitors for software engineering new hires'",
-    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211500\", \"risk_assessment\": \"MEDIUM\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Airbnb Enterprise' (Amount: $38,644.09): 'Executive car rental, airport limousine service, and luxury meal expenses'",
-    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"78111800\", \"risk_assessment\": \"MEDIUM\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Misc Merchant 902' (Amount: $31,988.47): 'Unitemized cash transfer reimbursement to offshore vendor with no itemized receipt attached'",
-    "output": "{\"category\": \"Uncategorized\", \"unspsc_code\": \"99999900\", \"risk_assessment\": \"HIGH\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Snowflake Inc' (Amount: $21,800.18): 'Monthly cloud infrastructure subscription for EC2, S3 bucket storage, and RDS database hosting'",
-    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43232800\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Services Co' (Amount: $18,997.33): 'Unitemized cash transfer reimbursement to offshore vendor with no itemized receipt attached'",
-    "output": "{\"category\": \"Uncategorized\", \"unspsc_code\": \"99999900\", \"risk_assessment\": \"HIGH\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Google Ads' (Amount: $14,782.08): 'Targeted digital advertising campaign on Google Search, LinkedIn Ads, and Meta feed'",
-    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82101800\", \"risk_assessment\": \"LOW\"}"
-  },
-  {
-    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Airbnb Enterprise' (Amount: $20,913.66): 'Roundtrip business flight tickets and 3-night hotel accommodation for annual sales summit'",
+    "input": "Categorize procurement spend item from Vendor 'MARTINS, RICHARD' (Amount: $117.84): 'CAR RENTAL'",
     "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'LinkedIn Ads' (Amount: $14,829.40): 'Targeted digital advertising campaign on Google Search, LinkedIn Ads, and Meta feed'",
-    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82101800\", \"risk_assessment\": \"LOW\"}"
+    "input": "Categorize procurement spend item from Vendor 'CITI PCARD-GREETINGS ETC INC' (Amount: $615.25): 'MISCELLANEOUS PRINTING'",
+    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82121500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'LegalShield LLP' (Amount: $49,802.24): 'Urgent consulting fee payment for external PR agency during product launch crisis'",
-    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80141600\", \"risk_assessment\": \"HIGH\"}"
+    "input": "Categorize procurement spend item from Vendor 'QUINTECH LLC' (Amount: $6,010.18): 'DISTRICT OFFICE RENT (PRIVATE) (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'HubSpot' (Amount: $25,306.39): 'Targeted digital advertising campaign on Google Search, LinkedIn Ads, and Meta feed'",
-    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82101800\", \"risk_assessment\": \"LOW\"}"
+    "input": "Categorize procurement spend item from Vendor 'ESTEBAN LINAREZ/KARLA LINAREZ' (Amount: $1,600.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Uber for Business' (Amount: $25,418.45): 'Roundtrip business flight tickets and 3-night hotel accommodation for annual sales summit'",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $10,419.00): 'TRAVEL SUBSISTENCE'",
     "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Delta Air Lines' (Amount: $25,699.98): 'Executive car rental, airport limousine service, and luxury meal expenses'",
-    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"78111800\", \"risk_assessment\": \"MEDIUM\"}"
+    "input": "Categorize procurement spend item from Vendor 'PC MALL GOV INC (PCMG)' (Amount: $1,705.16): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Airbnb Enterprise' (Amount: $39,190.42): 'Executive car rental, airport limousine service, and luxury meal expenses'",
-    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"78111800\", \"risk_assessment\": \"MEDIUM\"}"
+    "input": "Categorize procurement spend item from Vendor 'ALLIED CONTRACT INC' (Amount: $350.00): 'FURNITURE AND FIXTURE LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Misc Merchant 902' (Amount: $18,867.61): 'Unitemized cash transfer reimbursement to offshore vendor with no itemized receipt attached'",
-    "output": "{\"category\": \"Uncategorized\", \"unspsc_code\": \"99999900\", \"risk_assessment\": \"HIGH\"}"
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $1,885.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Services Co' (Amount: $9,337.80): 'Unitemized cash transfer reimbursement to offshore vendor with no itemized receipt attached'",
-    "output": "{\"category\": \"Uncategorized\", \"unspsc_code\": \"99999900\", \"risk_assessment\": \"HIGH\"}"
+    "input": "Categorize procurement spend item from Vendor 'CDW GOVERNMENT INC. C/O ISM IN' (Amount: $583.98): 'OFFICE EQUIP PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'HubSpot' (Amount: $13,087.62): 'Targeted digital advertising campaign on Google Search, LinkedIn Ads, and Meta feed'",
-    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82101800\", \"risk_assessment\": \"LOW\"}"
+    "input": "Categorize procurement spend item from Vendor 'LINK FORD AND RV - MINONG LLC' (Amount: $820.00): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Apex Global Vendor LLC' (Amount: $23,399.83): 'Unitemized cash transfer reimbursement to offshore vendor with no itemized receipt attached'",
-    "output": "{\"category\": \"Uncategorized\", \"unspsc_code\": \"99999900\", \"risk_assessment\": \"HIGH\"}"
+    "input": "Categorize procurement spend item from Vendor 'JELD LLC' (Amount: $1,700.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Delta Air Lines' (Amount: $31,220.72): 'Executive car rental, airport limousine service, and luxury meal expenses'",
-    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"78111800\", \"risk_assessment\": \"MEDIUM\"}"
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $3,173.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'PaperCorp Solutions' (Amount: $18,815.50): 'Bulk purchase of ergonomic office chairs, dual-monitor desks, and filing cabinets'",
-    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"56110000\", \"risk_assessment\": \"LOW\"}"
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $29,690.32): 'TECHNOLOGY SERVICE CONTRACTS (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"HIGH\"}"
   },
   {
     "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
-    "input": "Categorize procurement spend item from Vendor 'Services Co' (Amount: $20,968.04): 'Unitemized cash transfer reimbursement to offshore vendor with no itemized receipt attached'",
-    "output": "{\"category\": \"Uncategorized\", \"unspsc_code\": \"99999900\", \"risk_assessment\": \"HIGH\"}"
+    "input": "Categorize procurement spend item from Vendor 'CANON USA INC' (Amount: $15,038.00): 'OFFICE EQUIP PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $2,608.92): 'DISTRICT OFFICE RENT (PRIVATE) (no vendor on file, no supporting documentation)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DTG OPERATIONS INC' (Amount: $108.00): 'FEDERAL TORT CLAIMS'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $70.00): 'HIR GRAPHICS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $1,615.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'LOCKHEED MARTIN DESKTOP SOLUTIONS INC' (Amount: $1,816.00): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'PHILADELPHIA MFG COMPANY' (Amount: $560.00): 'PURCHASES FOR RESALE QTY - 10'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'kYVON' (Amount: $70.00): 'TELECOMSRV/EQ/TOLL CHARGE QTY - 2'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CDW GOVERNMENT INC. C/O ISM IN' (Amount: $172,265.40): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'BOROUGH OF HAMBURG' (Amount: $150.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $1,885.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $19,166.26): 'TECHNOLOGY SERVICE CONTRACTS (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ONE SOUTH HARBOR MEMBERS LLC' (Amount: $23,429.03): 'DISTRICT OFFICE RENT (PRIVATE) (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $1,885.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'VALLEY FORGE FLAG CO INC' (Amount: $8,663.04): 'PURCHASES FOR RESALE QTY - 1152'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'WOLTERS, KATE' (Amount: $4,018.85): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $60.00): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'INTELLIGENT DECISIONS INC' (Amount: $9,120.00): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $783.12): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'M CHIRCO PROF BLDG' (Amount: $2,500.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITI PCARD-SPLASH CAR WASH INC' (Amount: $67.00): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ADA'S TRUST & INVESTMENT INC' (Amount: $8,500.00): 'DISTRICT OFFICE RENT (PRIVATE) (duplicate submission \u2014 same invoice already paid this period)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $2.00): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $207.14): 'TRAVEL SUBSISTENCE (no vendor on file, no supporting documentation)'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor '17 PEABODY SQUARE LLC' (Amount: $266.67): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $1,615.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ROCKLER WOODWORKING & HARDWARE' (Amount: $169.08): 'OFFICE SUPPLIES (OUTSIDE) QTY - 12'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $348.74): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'VALLEY FORGE FLAG CO INC' (Amount: $14,438.40): 'PURCHASES FOR RESALE QTY - 1920'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $161.31): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'COUNTY OF LANCASTER' (Amount: $1,522.40): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $641.01): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $1,087.91): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $206.25): 'CAR RENTAL'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CDW GOVERNMENT INC. C/O ISM IN' (Amount: $1,257.45): 'COMPUTER SOFTW PURCH LESS THAN $10,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $115.01): 'CAR RENTAL'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown Vendor' (Amount: $16,331.25): 'DC TELECOM TOLLS (TRANSFER) (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'LIPSICH, WENDI E' (Amount: $104.15): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $78.19): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HP DOWNER BUSINESS CENTER LLC' (Amount: $24,032.42): 'DISTRICT OFFICE RENT (PRIVATE) (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'KEITH R TIANEN' (Amount: $825.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'JOHN TURLINGTON' (Amount: $600.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'SELECTIVE INSURANCE COMPANY OF THE' (Amount: $-683.92): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"MEDIUM\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $3,173.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'BLUE CANOPY GROUP LLC' (Amount: $225,758.38): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'MILLS SUBTENANT LLC' (Amount: $3,604.17): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'STALLMER, STEVEN J' (Amount: $62.00): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $250.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $14,812.67): 'TRAVEL SUBSISTENCE (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $1,300.31): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CULPEPER OFFICE ASSOC II' (Amount: $1,172.34): 'DISTRICT OFFICE RENT (PRIVATE) (duplicate submission \u2014 same invoice already paid this period)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $28,224.56): 'TECHNOLOGY SERVICE CONTRACTS (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CDW GOVERNMENT INC. C/O ISM IN' (Amount: $1,293.00): 'OFFICE EQUIP PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ALBANY TOWERS' (Amount: $2,934.00): 'DISTRICT OFFICE RENT (PRIVATE) (duplicate submission \u2014 same invoice already paid this period)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'TRAVIS A HULSEY' (Amount: $469.91): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $1,170.58): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $1,885.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ICONSTITUENT LLC' (Amount: $1,495.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $1,240.24): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'FIRESIDE21' (Amount: $1,785.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $4,213.10): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $634.06): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $8.00): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOFF BUILDING' (Amount: $24,159.76): 'DISTRICT OFFICE RENT (PRIVATE) (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DMV RENEWAL' (Amount: $240.00): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CAPITOL CONTENDER' (Amount: $500.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'VALLEY FORGE FLAG CO INC' (Amount: $12,088.32): 'PURCHASES FOR RESALE QTY - 1536'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HON DAVID VALADAO' (Amount: $678.20): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'WASHINGTON PROFESSIONAL SYSTEM' (Amount: $876.00): 'OFFICE SUPPLIES (OUTSIDE) QTY - 12'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $1,455.24): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $772.70): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $1,885.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $1,900.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'YOUNGSTOWN BUSINESS INCUBATOR' (Amount: $765.33): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $3,173.00): 'TECHNOLOGY SERVICE CONTRACTS (duplicate submission \u2014 same invoice already paid this period)'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CHAMPLAIN COLLEGE' (Amount: $683.53): 'TRAINING (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $24,819.80): 'TECHNOLOGY SERVICE CONTRACTS (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HALPERN, JONATHAN L' (Amount: $16.00): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $622.88): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ANDERSON FORD' (Amount: $121.17): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'MANDIANT CORPORATION' (Amount: $10,833.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $1,495.00): 'TECHNOLOGY SERVICE CONTRACTS (no vendor on file, no supporting documentation)'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'COUNTY OF BUCHANAN MISSOURI' (Amount: $250.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HUTKIN, ALEXANDER J' (Amount: $58.13): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'GOTO, MEINAN' (Amount: $327.49): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $1,269.05): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $1,051.52): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $419.83): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'MARVIN J PERRY' (Amount: $10,332.70): 'FURNITURE AND FIXTURE LESS THAN $25,000 QTY - 5'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSING AMERICA CORP' (Amount: $300.00): 'DISTRICT OFFICE RENT (PRIVATE) (duplicate submission \u2014 same invoice already paid this period)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $1,330.00): 'DISTRICT OFFICE RENT (PRIVATE) (no vendor on file, no supporting documentation)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $1,000.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $1,010.96): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'WATTS, NICOLE D' (Amount: $34.95): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $52.95): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITI PCARD-EXXONMOBIL' (Amount: $10.00): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'INTELLIGENT DECISIONS INC' (Amount: $309,866.20): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CYBERMEDIA TECHNOLOGIES INC' (Amount: $34,227.20): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $15.77): 'TRAVEL SUBSISTENCE (no vendor on file, no supporting documentation)'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ENTERPRISE FLEET MANAGEMENT' (Amount: $369.12): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown Vendor' (Amount: $11,612.67): 'DC TELECOM TOLLS (TRANSFER) (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $3,030.00): 'TECHNOLOGY SERVICE CONTRACTS (no vendor on file, no supporting documentation)'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'JBJ REAL PROPERTY LLC' (Amount: $10,397.20): 'DISTRICT OFFICE RENT (PRIVATE) (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'PADILLA III, LIBRADO' (Amount: $477.80): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'SAGINAW&COURT ASSOCIATES' (Amount: $3,000.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'MCMILL INC' (Amount: $450.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'TOWN OF RANDOLPH' (Amount: $351.90): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'LOCKHEED MARTIN DESKTOP SOLUTIONS INC' (Amount: $2,060.00): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CDW GOVERNMENT INC. C/O ISM IN' (Amount: $722.18): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $60.39): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'MTS OFFICE MACHINES LLC' (Amount: $3,995.00): 'OFFICE EQUIP PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $509.51): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $1,885.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DMV RENEWAL' (Amount: $313.00): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $38.29): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $98.55): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ICONSTITUENT LLC' (Amount: $1,495.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $1,310.84): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'FAGAN,THOMAS A' (Amount: $65.69): 'CAR RENTAL'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ICONSTITUENT LLC' (Amount: $3,225.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'RICOH AMERICAS CORP' (Amount: $2,017.00): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $917.87): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $198.00): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CAPITOL IDEA TECHNOLOGY INC' (Amount: $27,317.15): 'TECHNOLOGY SERVICE CONTRACTS (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITI PCARD-CHARLOTTE HALL BP QPS' (Amount: $44.00): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor '11 EPISCOPAL DISTRICT' (Amount: $2,356.67): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ENTERPRISE RENT-A-CAR' (Amount: $369.02): 'CAR RENTAL'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'MURTAUGH, TIMOTHY M' (Amount: $321.99): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'THE TOWN OF BOLTON DEVELOPMENT' (Amount: $1,578.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DAVID L. ANDRUKITUS INC' (Amount: $1,725.00): 'PURCHASES FOR RESALE QTY - 300'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'L FISHMAN & SON' (Amount: $403.41): 'OFFICE SUPPLIES (OUTSIDE) QTY - 30'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOCHSCHILD, KEENAN N' (Amount: $33.98): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $255.54): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $4,332.70): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'REGENT'S PARC LLC' (Amount: $1,800.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'SYMFODIUM LLC' (Amount: $1,700.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'SAGE SYSTEMS LLC' (Amount: $2,530.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CDW GOVERNMENT INC. C/O ISM IN' (Amount: $815.00): 'OFFICE EQUIP PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'BOBBIE JEAN OWENS' (Amount: $500.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $1,523.00): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ICONSTITUENT LLC' (Amount: $1,780.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'BREEZE PRINTING COMPANY' (Amount: $500.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $1,885.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $349.24): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'RAHMLOW, MARK K' (Amount: $30.00): 'TRAINING'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'RICOH USA INC' (Amount: $6,829.00): 'OFFICE EQUIP PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'STUCKEY FORD' (Amount: $209.17): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $2,062.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'BALLARD, JORDAN L' (Amount: $694.07): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $1,096.60): 'TRAVEL SUBSISTENCE (no vendor on file, no supporting documentation)'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'FIRESIDE21' (Amount: $1,785.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $1,615.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $740.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $1,490.66): 'TRAVEL SUBSISTENCE (no vendor on file, no supporting documentation)'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'RATH, SHEILA M' (Amount: $4.25): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'BOBBIE JEAN OWENS' (Amount: $500.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown Vendor' (Amount: $5,086.35): 'DC TELECOM TOLLS (TRANSFER) (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'JDR REAL ESTATE' (Amount: $2,000.00): 'DISTRICT OFFICE RENT (PRIVATE) (duplicate submission \u2014 same invoice already paid this period)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'MIKE HAM' (Amount: $3,902.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'INDUSTRIAL WOOD FINISHES LTD' (Amount: $213.24): 'OFFICE SUPPLIES (OUTSIDE) QTY - 12'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'THRIFTY CAR RENTAL OF OKC' (Amount: $210.16): 'CAR RENTAL'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $1,615.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITI PCARD-11950 - CAR POOL' (Amount: $21.95): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'H&C CONSULTING CORPORATION' (Amount: $3,925.00): 'DISTRICT OFFICE RENT (PRIVATE) (duplicate submission \u2014 same invoice already paid this period)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'MCDANIEL, DARON B' (Amount: $166.03): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CDW GOVERNMENT INC. C/O ISM IN' (Amount: $5,499.86): 'COMPUTER SOFTW PURCH LESS THAN $10,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ELLIOTT/WILSON CAPITOL TRUCKS' (Amount: $2,260.71): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $454.28): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'FIRESIDE21' (Amount: $1,785.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CLAYDESTA BUILDINGS L P' (Amount: $1,378.29): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'GARTZKE, DANA' (Amount: $2,890.41): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $866.42): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CDW GOVERNMENT INC. C/O ISM IN' (Amount: $1,175.00): 'COMPUTER HARDW PURCH LESS THAN $25,000 (duplicate submission \u2014 same invoice already paid this period)'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $1,615.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'FINS,ERIC' (Amount: $61.99): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'COLLINS, SUSAN M' (Amount: $111.40): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CLAYDESTA BUILDINGS L P' (Amount: $1,378.29): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor '4D'S CORPORATION' (Amount: $270.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'BOBBIE JEAN OWENS' (Amount: $500.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'BFD INVESTMENT COMPANY' (Amount: $3,051.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CDW GOVERNMENT INC. C/O ISM IN' (Amount: $3,065.70): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $1,122.44): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'WASH RITE' (Amount: $165.00): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $155.23): 'TRAVEL SUBSISTENCE (duplicate submission \u2014 same invoice already paid this period)'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $1,000.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $636.62): 'TRAVEL SUBSISTENCE (duplicate submission \u2014 same invoice already paid this period)'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor '901 LLC' (Amount: $6,426.59): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'FRONTIER COMMERCIAL' (Amount: $3,875.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'THE E GROUP INC' (Amount: $3,450.00): 'PURCHASES FOR RESALE QTY - 300'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $3,474.92): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'GUY LLOYD INC' (Amount: $1,134.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'SYMFODIUM LLC' (Amount: $1,200.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DELL MARKETING LP' (Amount: $2,209.08): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HEWLETT-PACKARD COMPANY' (Amount: $613.33): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ENTERPRISE FLEET MANAGEMENT' (Amount: $2,118.00): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $391.49): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $1,615.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $2.75): 'CAR RENTAL'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $1,000.00): 'TECHNOLOGY SERVICE CONTRACTS (duplicate submission \u2014 same invoice already paid this period)'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ROE, JAMIE A' (Amount: $198.22): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $494.08): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'FIRESIDE21' (Amount: $24,237.60): 'TECHNOLOGY SERVICE CONTRACTS (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'FORREST COUNTY BOARD OF SUPERVISORS' (Amount: $700.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'ICONSTITUENT LLC' (Amount: $3,225.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'FAGAN,THOMAS A' (Amount: $300.00): 'TRAINING'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CDW GOVERNMENT INC. C/O ISM IN' (Amount: $554.55): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $563.09): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HERMOSA LP' (Amount: $1,924.59): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $1,035.30): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $2,242.00): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CLARK, JONATHAN A' (Amount: $683.24): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'SYMFODIUM LLC' (Amount: $1,700.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'BAHNSEN, NICHOLAS S' (Amount: $26.15): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'PEORIA AVIATION LLC' (Amount: $448.03): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $870.47): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'MAGNOLIA FINANCIAL INC/METRODATA NETWORK' (Amount: $4,236.60): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'RICOH AMERICAS CORP' (Amount: $2,017.00): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CDW GOVERNMENT INC. C/O ISM IN' (Amount: $2,759.80): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $1,922.50): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'COBB COUNTY TAX OFFICE' (Amount: $422.75): 'AUTO EXPENSES'",
+    "output": "{\"category\": \"Office Supplies\", \"unspsc_code\": \"44121700\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $1,885.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DOHERTY, MARY J' (Amount: $637.49): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITY OF HOUSTON' (Amount: $230.40): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'MORE DIRECT INC' (Amount: $839.00): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'BOGNANNO, CHRISTOPHER J' (Amount: $878.08): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'GEORGE W ALLEN COMPANY INC' (Amount: $800.00): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CASS INVESTMENTS LLC' (Amount: $1,600.00): 'DISTRICT OFFICE RENT (PRIVATE) (duplicate submission \u2014 same invoice already paid this period)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'OGDEN NEWSPAPERS OF IOWA LLC' (Amount: $10,702.48): 'DISTRICT OFFICE RENT (PRIVATE) (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITI PCARD-GREENLIGHT-ONLINE' (Amount: $552.88): 'MISCELLANEOUS PRINTING'",
+    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'DESKTOP SOLUTIONS INC' (Amount: $3,173.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'UND CENTER FOR INNOVATION FOUNDATION' (Amount: $600.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'BLT PROPERTIES' (Amount: $4,525.10): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $274.85): 'TRAVEL SUBSISTENCE (no vendor on file, no supporting documentation)'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $2,600.15): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'AMERICAN SYSTEMS CORPORATION' (Amount: $10,679.25): 'OFFICE EQUIP PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'MORE DIRECT INC' (Amount: $1,440.66): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $85.36): 'TRAVEL SUBSISTENCE (no vendor on file, no supporting documentation)'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"HIGH\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITIBANK GOV CARD SERVICE' (Amount: $2,376.24): 'TRAVEL SUBSISTENCE'",
+    "output": "{\"category\": \"Travel & Lodging\", \"unspsc_code\": \"90121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'GALVESTON COUNTY' (Amount: $1,500.00): 'DISTRICT OFFICE RENT (PRIVATE)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'INTELLIGENT DECISIONS INC' (Amount: $99,445.50): 'COMPUTER HARDW PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'Unknown/Unlisted Vendor' (Amount: $896.64): 'DC TELECOM TOLLS (TRANSFER)'",
+    "output": "{\"category\": \"IT Software & Cloud\", \"unspsc_code\": \"43231500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CITI PCARD-RIVERSIDE COURT WEB IM' (Amount: $3.00): 'MISCELLANEOUS PRINTING'",
+    "output": "{\"category\": \"Marketing & Advertising\", \"unspsc_code\": \"82121500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'HOUSECALL' (Amount: $1,615.00): 'TECHNOLOGY SERVICE CONTRACTS'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'CANON USA INC' (Amount: $15,976.00): 'OFFICE EQUIP PURCH LESS THAN $25,000'",
+    "output": "{\"category\": \"Hardware & Equipment\", \"unspsc_code\": \"43211900\", \"risk_assessment\": \"LOW\"}"
+  },
+  {
+    "instruction": "You are a Business Spend Management AI assistant. Categorize the procurement transaction into UNSPSC standard code, category, and risk level.",
+    "input": "Categorize procurement spend item from Vendor 'WIRELESS INTERNET SERVICES INC' (Amount: $7,680.08): 'TECHNOLOGY SERVICE CONTRACTS (amount significantly exceeds typical range for this category)'",
+    "output": "{\"category\": \"Professional Services\", \"unspsc_code\": \"80101500\", \"risk_assessment\": \"HIGH\"}"
   }
 ]

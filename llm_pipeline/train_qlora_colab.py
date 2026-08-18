@@ -85,21 +85,98 @@ def run_qlora_finetuning():
         gradient_accumulation_steps=4,
         learning_rate=2e-4,
         logging_steps=10,
-        max_steps=100,
+        max_steps=700,
         fp16=True,
         optim="paged_adamw_8bit",
         report_to="none",
     )
 
-    trainer = SFTTrainer(
-        model=model,
-        train_dataset=dataset["train"],
-        peft_config=peft_config,
-        formatting_func=format_prompt,
-        max_seq_length=512,
-        tokenizer=tokenizer,
-        args=training_args,
-    )
+    def build_sft_config(max_seq_kwarg=None):
+        kwargs = dict(
+            output_dir=OUTPUT_DIR,
+            per_device_train_batch_size=4,
+            gradient_accumulation_steps=4,
+            learning_rate=2e-4,
+            logging_steps=10,
+            max_steps=700,
+            fp16=True,
+            optim="paged_adamw_8bit",
+            report_to="none",
+        )
+        if max_seq_kwarg:
+            kwargs.update(max_seq_kwarg)
+        from trl import SFTConfig
+        return SFTConfig(**kwargs)
+
+    trainer = None
+    last_err = None
+
+    # Attempt 1: older trl (<=0.9.x) — max_seq_length passed straight to SFTTrainer.
+    try:
+        trainer = SFTTrainer(
+            model=model,
+            train_dataset=dataset["train"],
+            peft_config=peft_config,
+            formatting_func=format_prompt,
+            max_seq_length=512,
+            tokenizer=tokenizer,
+            args=training_args,
+        )
+    except TypeError as e:
+        last_err = e
+
+    # Attempt 2: mid-era trl — max_seq_length lives on SFTConfig.
+    if trainer is None:
+        try:
+            sft_args = build_sft_config({"max_seq_length": 512})
+            trainer = SFTTrainer(
+                model=model,
+                train_dataset=dataset["train"],
+                peft_config=peft_config,
+                formatting_func=format_prompt,
+                processing_class=tokenizer,
+                args=sft_args,
+            )
+        except TypeError as e:
+            last_err = e
+
+    # Attempt 3: newest trl — renamed to max_length, or dropped this kwarg
+    # from SFTConfig entirely (sequence length is inferred/handled elsewhere).
+    if trainer is None:
+        try:
+            sft_args = build_sft_config({"max_length": 512})
+            trainer = SFTTrainer(
+                model=model,
+                train_dataset=dataset["train"],
+                peft_config=peft_config,
+                formatting_func=format_prompt,
+                processing_class=tokenizer,
+                args=sft_args,
+            )
+        except TypeError as e:
+            last_err = e
+
+    # Attempt 4: no max-length kwarg at all.
+    if trainer is None:
+        try:
+            sft_args = build_sft_config()
+            trainer = SFTTrainer(
+                model=model,
+                train_dataset=dataset["train"],
+                peft_config=peft_config,
+                formatting_func=format_prompt,
+                processing_class=tokenizer,
+                args=sft_args,
+            )
+        except TypeError as e:
+            last_err = e
+
+    if trainer is None:
+        raise RuntimeError(
+            f"Could not construct SFTTrainer with the installed trl version. "
+            f"Last error: {last_err}. Run `import trl; print(trl.__version__)` "
+            f"and check the SFTConfig signature with `help(SFTConfig)`."
+        )
 
     print("Starting QLoRA Fine-Tuning on BSM Spend Dataset...")
     trainer.train()
